@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jeferson Brito">
+  <meta name="description" content="Página de suporte para problemas relacionados a Lavanderia 60 Minutos.">
+  <meta name="keywords" content="Problemas, Soluções, Dúvidas, Sugestões">
+  <title>Home | Lavanderia 60 Minutos</title>
+
+  <!-- External CSS files -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/home.css">
+  <link rel="stylesheet" href="Navigation/Cards/1 - Style/Pop-up.css">
+  <link rel="icon" href="img/Logo/Logo_Oficial_Lavanderia_60_Minutos-01-1-e1659466866316.png">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo-text">
+      <img src="img/Logo/ikli-extendido.png">
+    </a>
+
+    <button style="display: none;" class="header__btnMenu">
+      <i class="fas fa-bars fa-2x"></i>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="https://sistema.lavanderia60minutos.com.br/" target="_blank">Laundry system</a></li>
+        <li><a href="Navigation/Suporte/Suporte.html">Support</a></li>
+        <li><a href="Navigation/helpdesk/Helpdesk.html" title="Em breve o suporte para o HelpDesk">HelpDesk</a></li>
+        <li><a href="#" onclick="openPopup(1)">Laundry map</a></li>
+        <li><a href="#" alt="Em breve"><span class="popup-trigger">contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="hero__title" alt>
+      Suporte
+    </h1>
+    <p class="hero__text">Bem-vindo ao Suporte LAV60! Como podemos ajudar?</p>
+
+    <div class="search">
+      <input class="buscar" type="text" id="searchInput" placeholder="Buscar...">
+      <i id="searchButton"><img src="img/Icons/Outros icons/magnifier.png" alt="Pesquisar" title="Pesquisar"></i>
+    </div>
+  </section>
+
+  <div class="container">
+    <h1 class="Doubts">
+      Dúvidas Frequentes
+    </h1>
+    <p class="Doubtsp">
+      Selecione um tipo de produto primeiro
+    </p>
+
+    <!-- People Cards Section -->
+    <section class="people-cards">
+      <!-- Card 1 -->
+      <article class="people-cards__card">
+        <a href="Navigation/Cards/Ar-condicionado/Ar-condicionado.html">
+          <div class="people-cards__content">
+            <img src="img/Icons/Ar-condicionado.png" alt="Ar-condicionado" class="people-cards__image ar-img">
+            <h2 class="people-cards__title mg ar">Ar-condicionado</h2>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="people-cards__card">
+        <a href="Navigation/Cards/Maquineta/Maquineta.html">
+          <div class="people-cards__content">
+            <img src="img/Icons/Maquineta.png" alt="Maquineta" class="people-cards__image" style="margin-left: 10px;">
+            <h2 class="people-cards__title mg">Maquineta</h2>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="people-cards__card">
+        <a href="Navigation/Cards/Lavadoras/Lavadoras.html">
+          <div class="people-cards__content">
+            <img src="img/Icons/Lavadora.png" alt="Lavadoras" class="people-cards__image" style="margin-left: 20px;">
+            <h2 class="people-cards__title mg">Lavadoras</h2>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="people-cards__card">
+        <a href="Navigation/Cards/Noteiro/Noteiro.html">
+          <div class="people-cards__content">
+            <img src="img/Icons/Noteiro.png" alt="Noteiro" class="people-cards__image" style="margin-left: 20px;">
+            <h2 class="people-cards__title mg">Noteiro</h2>
+          </div>
+        </a>
+      </article>
+    </section>
+  </div>
+
+  <!-- Content Section -->
+  <section class="content">
+    <h1 class="h1-title">
+      Em que podemos ajudar?
+    </h1>
+    <div class="container">
+      <!-- Card 1 -->
+      <article class="art">
+        <a class="container-p" href="Navigation/Suporte/Suporte.html">
+          <img src="img/Icons/testing.png">
+          <p>Suporte Geral</p>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="art">
+        <a class="container-p" href="#" onclick="openPopup(1)">
+          <img src="img/Icons/location.png">
+          <p>Laundry Map</p>
+        </a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="art">
+        <a class="container-p" href="Navigation/helpdesk/Helpdesk.html">
+          <img src="img/Icons/Helpdesk.png" style="margin-left: 20px">
+          <p>HelpDesk</p>
+        </a>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="art">
+        <a href="javascript:void(0);" onclick="exibirFormulario()" class="container-p" href="#">
+          <img src="img/Icons/sugestao.png">
+          <p>Sugestões</p>
+        </a>
+      </article>
+    </div>
+  </section>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Pop-up do formulário de sugestão -->
+    <div class="form-popup" id="form-popup">
+      <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="fecharFormulario()" class="fechar" style="float: right;">
+        <h3>Formulário de Sugestão</h3>
+        <form onsubmit="enviarFormulario(); return false;" id="suggestion-form">
+            <label for="nome"></label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required autocomplete="off">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="off">
+            <label for="sugestao"></label>
+            <textarea id="sugestao" name="sugestao" rows="4" placeholder="Sugestão" required autocomplete="off"></textarea>
+            <button onclick="if (validarEmail()) enviarFormulario();" id="enviar-button" disabled>Enviar</button>
+        </form>
+    </div>
+
+<!-- Pop-up de confirmação simulada -->
+<div class="confirmation-popup" id="confirmation-popup">
+    <p>Sugestão enviada com sucesso!</p>
+</div>
+
+
+  <!-- Botão de rolar até o topo -->
+  <img src="img/Icons/Outros icons/up-arrow.png" id="scroll-to-top-btn" class="hidden">
+
+  <!-- Tela de carregamento -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Pop-up exibindo as informações de nova atualização do site! -->
+  <div class="modal" id="myModalGeral">
+    <div class="modal-content">
+      <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopupGeral()" class="fechar" style="float: right;">
+        <h2>Atualização do Site (Versão 1.1.2)</h2>
+        <p class="novidade">Novidades!</p>
+        <ul class="atualização">
+            <li>Correção de vários bugs para melhorar a estabilidade.</li>
+            <li>Novos tópicos de resolução de problemas adicionados!</li>
+            <li>Adicionada uma nova funcionalidade: agora você pode enviar sugestões de melhorias para o site.</li>
+        </ul>
+    </div>
+</div>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__logo">Lavanderia60minutos</h2>
+      <p>&copy; Lavanderia 60 Minutos 2023. Todos os direitos reservados. Este site é de propriedade da HI GROUP LTDA, única responsável por seu conteúdo.</p>
+      <p>LAVANDERIA 60 MINUTOS | CNPJ: 28.842.017/0001-05<br>Av. Mar Vermelho, 290 - Intermares, Cabedelo - PB, 58102-120</p>
+      <p>V1.1.2</p>
+    </div>
+    <div>
+      <a class="redes-sociais" href="https://www.facebook.com/lavanderia60minutos" target="_blank"><img src="img/Icons/Redes-Sociais icons/facebook.png"></a>
+      <a class="redes-sociais" href="https://www.instagram.com/lavanderia60minutos/" target="_blank"><img src="img/Icons/Redes-Sociais icons/instagram.png"></a>
+      <a class="redes-sociais" href="http://api.whatsapp.com/send?1=pt_BR&phone=5583998161173" target="_blank"><img src="img/Icons/Redes-Sociais icons/whatsapp.png"></a>
+      <a class="redes-sociais" href="https://www.youtube.com/channel/UCIMPtxzLzZFVDlz2XucOrrw/videos" target="_blank"><img src="img/Icons/Redes-Sociais icons/youtube.png"></a>
+    </div>
+  </footer>
+    
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(1)" class="fechar" style="float: right;">
+      <h3>Escolha a região da loja</h3>
+
+      <ul class="map-list">
+        <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1KcHeomKUQQEh1ko6dfvulEoFftHlGag&ll=-2.966649593971806%2C-55.92101905&z=5" target="_blank">Lojas do Norte</a><p class="maps-estados">AC - AM - AP - PA - RO - RR - TO</p></li>
+        <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1Ck7cvd-ImTteu1AXS2ADxafN5a0y670&ll=-10.102174947744818%2C-41.16191960000002&z=4" target="_blank">Lojas do Nordeste</a><p class="maps-estados">AL - BA - CE - MA - PB - PE - PI - RN</p></li></li>
+        <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1d5w022Bhhn86R0i0R12u2LSSjplVi38&ll=-19.083855829448787%2C-53.076589718106675&z=5" target="_blank">Lojas do Centro-Oeste</a><p class="maps-estados">DF - GO - MS - MT
+        </p></li>
+        <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1ThoXAEYEPMHE6jw_Jt8HepiOS-5pNdo&ll=-21.64142220737699%2C-44.64952074999999&z=5" target="_blank">Lojas do Sudeste</a><p class="maps-estados">ES - MG - RJ</p></li>
+        <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1MsYjt01G5HzwyBKyliFsku2yIRP2eH4&ll=-28.413931404858133%2C-50.94374495000001&z=6" target="_blank">Lojas do Sul</a><p class="maps-estados">PR - RS - SC</p></li>
+        <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1Bh0nDa_0aGGQUt8hYZKcqC0LFrhEI7A&ll=-23.324915578939212%2C-47.300741949999995&z=8" target="_blank">Lojas de São Paulo</a><p class="maps-estados">SP</p></li>
+      </ul>  
+
+      <a class="fechar-popup" href="#" onclick="closePopup(1)">Fechar</a>
+    </div>
+
+  <!-- External JS files -->
+  <script src="js/menu.js"></script> <!-- Menu hamburguer -->
+  <script src="js/main.js"></script> <!-- Menu hamburguer -->
+  <script src="js/cards-maquineta.js"></script>
+  <script src="js/barra-pesquisa.js"></script>
+  <script src="js/forms.js"></script>
+  
+
+  <script>
+    // Código para esconder a tela de carregamento quando a página estiver carregada
+    window.addEventListener('load', function () {
+      var loader = document.querySelector('.loader-wrapper');
+      loader.style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+    <head>
+        <title> HelpDesk | Lavanderia60minutos </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta name="author" content="Jeferson Brito">
+        <meta name="description" content="Página de suporte para problemas relacionados a lavanderia 60 minutos.">
+        <meta name="keywords" content="Problemas, Soluções, Dúvidas, Sugestões">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> <!-- Menu hamburguer -->
+
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="../Suporte/style/style-suporte.css">
+        <link rel="stylesheet" href="../helpdesk/style/style-suporte.css">
+        <link rel="stylesheet" href="../Cards/1 - Style/Pop-up.css">
+
+        <link rel="icon" href="img/Imagens/Logo_Oficial_Lavanderia_60_Minutos-01-1-e1659466866316.png">
+      
+    </head>
+    <body>
+        
+
+        <header class="header">
+          <a href="../../index.html" class="logo-text"><img src="../../img/Logo/ikli-extendido.png"></a>
+            
+          <button style="display: none;" class="header__btnMenu"> <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span></button>
+          
+          <nav class="header__nav">
+            <ul>
+              <li><a href="../../index.html" target="_blank">Home</a></li>
+              <li><a href="https://sistema.lavanderia60minutos.com.br/" target="_blank">Laundry system</a></li>
+              <li><a href="../Suporte/Suporte.html">Support</a></li>
+              <li><a href="#" onclick="openPopup(1)">Laundry map</a></li>
+              <li><a href="#" alt="Em breve"><span class="popup-trigger">contact</span></a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="hero">            
+                    
+        </section>
+
+        <div class="container">
+          <div class="Doubts">
+            <img src="../../img/Icons/suporte-ao-cliente.png" style="margin-left: 30px">
+          </div>
+          <h1 class="Doubts">
+            Suporte ao cliente
+          </h1>
+          <p class="Doubtsp">
+            Selecione o tipo de problema primeiro
+          </p>
+        
+          <section class="people-cards">
+
+            <article class="people-cards__card">               
+  
+  
+              <a href="Cards-SAC/Problemas-Roupas/Roupas.html"><div class="people-cards__content mg">
+                <img src="../../img/Icons/roupa-suja.png" alt="Carousel Img" class="people-cards__image">
+                <h2 class="people-cards__title arr" style="font-size: 21px;">Problemas com as roupas</h2>
+  
+              </div></a>
+  
+          </article>  
+  
+          <article class="people-cards__card">               
+  
+  
+            <a href="#"><div class="people-cards__content mg" onclick="openPopup(2)">
+              <img src="../../img/Icons/Erro-no-pagamento.png" alt="Carousel Img" class="people-cards__image" style="margin-left: 20px;">
+              <h2 class="people-cards__title">Problemas no pagamento</h2>
+  
+            </div></a>
+  
+        </article>        
+                  
+          </section>
+  
+          <section class="content">
+  
+          <div class="container">
+  
+            <article class="art">
+              
+              <a class="container-p" href="Cards-SAC/Problemas-Roupas/Roupas.html"><img src="../../img/Icons/roupa-suja.png" alt="Carousel Img" class="people-cards__image" style="width: 100px;"><h2 class="people-cards__title" style="font-size: 18px; margin-top: 22px;">Problema com as roupas</h2></a>
+  
+              
+            </article>
+  
+            <article class="art">
+              
+              <a class="container-p" href="#" onclick="openPopup(2)"><img src="../../img/Icons/Erro-no-pagamento.png" alt="Carousel Img" class="people-cards__image" style="width: 100px; margin-left: 20px;"><h2 class="people-cards__title">Problemas no pagamento</h2></a>
+  
+              
+            </article>
+          
+            </div>
+          </section>
+  
+        </div>
+        
+      <img src="../../img/Icons/Outros icons/up-arrow.png" id="scroll-to-top-btn" class="hidden">
+
+          <!-- Tela de carregamento -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+      <footer class="footer" style="margin-top: 50px;">
+          <div class="container">
+              <h2 class="footer__logo">Lavanderia60minutos</h2>
+      
+              <p>
+                &copy; Lavanderia 60 Minutos 2023. Todos os direitos Reservados. Este site é de propriedade da HI GROUP LTDA, única responsável por seu conteúdo.
+              </p>
+
+              <p>
+                LAVANDERIA 60 MINUTOS   |   CNPJ: 28.842.017/0001-05<br>
+                Av. Mar Vermelho, 290 - Intermares, Cabedelo - PB, 58102-120
+              </p>
+
+
+          </div>
+
+          <div>
+            <a class="redes-sociais" href="https://www.facebook.com/lavanderia60minutos" target="_blank"><img src="../../img/Icons/Redes-Sociais icons/facebook.png"></a>
+            <a class="redes-sociais" href="https://www.instagram.com/lavanderia60minutos/" target="_blank"><img src="../../img/Icons/Redes-Sociais icons/instagram.png"></a>
+            <a class="redes-sociais" href="http://api.whatsapp.com/send?1=pt_BR&phone=5583998161173" target="_blank"><img src="../../img/Icons/Redes-Sociais icons/whatsapp.png"></a>
+            <a class="redes-sociais" href="https://www.youtube.com/channel/UCIMPtxzLzZFVDlz2XucOrrw/videos" target="_blank"><img src="../../img/Icons/Redes-Sociais icons/youtube.png"></a>
+          </div>
+
+      </footer>
+
+      <div class="popup" id="popup2">
+        <div class="popup-content">
+          <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(2)" class="fechar" style="float: right;">
+    
+        <h3 class="escolha-title">O problema é na loja física ou online?</h3>
+        <a class="escolha escolha-sim loja" href="Cards-SAC/Problemas-pagamentos/Loja-física/Loja-fisica.html">Loja física</a> ou
+        <a class="escolha escolha-não" href="Cards-SAC/Problemas-pagamentos/Loja-online/Loja-online.html">Loja online</a>
+        </div>
+
+      <div class="popup" id="popup1">
+        <div class="popup-content">
+          <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(1)" class="fechar" style="float: right;">
+          <h3>Escolha a região da loja</h3>
+    
+          <ul class="map-list">
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1KcHeomKUQQEh1ko6dfvulEoFftHlGag&ll=-2.966649593971806%2C-55.92101905&z=5" target="_blank">Lojas do Norte</a><p class="maps-estados">AC - AM - AP - PA - RO - RR - TO</p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1Ck7cvd-ImTteu1AXS2ADxafN5a0y670&ll=-10.102174947744818%2C-41.16191960000002&z=4" target="_blank">Lojas do Nordeste</a><p class="maps-estados">AL - BA - CE - MA - PB - PE - PI - RN</p></li></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1d5w022Bhhn86R0i0R12u2LSSjplVi38&ll=-19.083855829448787%2C-53.076589718106675&z=5" target="_blank">Lojas do Centro-Oeste</a><p class="maps-estados">DF - GO - MS - MT
+            </p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1ThoXAEYEPMHE6jw_Jt8HepiOS-5pNdo&ll=-21.64142220737699%2C-44.64952074999999&z=5" target="_blank">Lojas do Sudeste</a><p class="maps-estados">ES - MG - RJ</p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1MsYjt01G5HzwyBKyliFsku2yIRP2eH4&ll=-28.413931404858133%2C-50.94374495000001&z=6" target="_blank">Lojas do Sul</a><p class="maps-estados">PR - RS - SC</p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1Bh0nDa_0aGGQUt8hYZKcqC0LFrhEI7A&ll=-23.324915578939212%2C-47.300741949999995&z=8" target="_blank">Lojas de São Paulo</a><p class="maps-estados">SP</p></li>
+          </ul>  
+
+          <a class="fechar-popup" href="#" onclick="closePopup(1)">Fechar</a>
+    
+        </div>
+        
+
+        <script src="../../js/menu.js"></script>        
+        <script src="../../js/main.js"></script>
+        <script src="../../js/cards-maquineta.js"></script>
+
+        <script>
+          // Código para esconder a tela de carregamento quando a página estiver carregada
+          window.addEventListener('load', function () {
+        var loader = document.querySelector('.loader-wrapper');
+        loader.style.display = 'none';
+      });
+    </script>
+
+    </body>
+</html>

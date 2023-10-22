@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+    <head>
+        <title> Lavadoras | Lavanderia60minutos </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta name="author" content="Jeferson Brito">
+        <meta name="description" content="Página de suporte para problemas relacionados a lavanderia 60 minutos.">
+        <meta name="keywords" content="Problemas, Soluções, Dúvidas, Sugestões">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> <!-- Menu hamburguer -->
+
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="../1 - Style/Pop-up.css">
+
+        <link rel="stylesheet" href="../1 - Style/style-suporte.css">
+
+        <link rel="stylesheet" href="../Lavadoras/Sub-cards/style/tabela.css">
+
+
+        <link rel="icon" href="../1 - Style/img/Imagens/Logo_Oficial_Lavanderia_60_Minutos-01-1-e1659466866316.png">
+
+    </head>
+    <body>
+        
+
+        <header class="header">
+          <a href="../../Suporte/Suporte.html" class="logo-text"><img src="../../../img/Logo/ikli-extendido.png" style="width: 280px; height: 40px"></a>
+            
+          <button style="display: none;" class="header__btnMenu"> <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span></button>
+          
+          <nav class="header__nav">
+            <ul>
+              <li><a href="../../../index.html" target="_blank">Home</a></li>
+              <li><a href="https://sistema.lavanderia60minutos.com.br/" target="_blank">Laundry system</a></li>
+              <li><a href="../../Suporte/Suporte.html">Support</a></li>
+              <li><a href="../../helpdesk/Helpdesk.html">HelpDesk</a></li>
+              <li><a href="#" onclick="openPopup(100)">Laundry map</a></li>
+              <li><a href="#" alt="Em breve"><span class="popup-trigger">contact</span></a></li>
+            </ul>
+          </nav>
+          
+        </header>
+
+        <section class="hero">            
+                    
+        </section>
+
+        <div class="container">
+          <div class="Doubts">
+            <img src="../../../img/Icons/Lavadora.png" style="margin-left: 20px;">
+          </div>
+          <h1 class="Doubts">
+            Lavadoras/Secadoras
+          </h1>
+          <p class="Doubtsp">
+            Selecione o tipo de problema primeiro
+          </p>
+
+
+         
+         <section class="people-cards">   
+                  
+          <div class="title-container">
+            <a class="title-a" href="Sub-cards/Tabela-códigos-erros.html"><p class="title">Códigos de erro</p></a>
+            <p class="title" onclick="openPopup(2)">Maquinas offline</p>
+            <p class="title" onclick="openPopup(1)">Maquina liberada em tempo restante</p>
+            <p class="title" onclick="openPopup(0)">Vazio</p>
+            <p class="title" onclick="openPopup(0)">Vazio</p>
+            <p class="title" onclick="openPopup(0)">Vazio</p>
+          </div>
+        
+          <div class="popup" id="popup1">
+            <div class="popup-content">
+              <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(1)" class="fechar" style="float: right;">
+              <h3 style="margin-top: 50px;">Maquina liberada em tempo restante</h3>
+
+              <ul>
+                <li>Primeiramente, solicite ao cliente o seu CPF ou endereço de e-mail para localizar o respectivo cadastro.</li>
+                <li>Em seguida, pergunte ao cliente qual o código da máquina que ele utilizou. Verifique no sistema se a máquina de fato foi liberada em tempo restante.</li>
+                <li style="margin-bottom: 50px;">Se sim, realize uma nova liberação ao cliente e, em sequência, registre uma ocorrência em seu cadastro.</li>
+              </ul> 
+
+            </div>
+
+          </div>
+
+          <div class="popup" id="popup2">
+            <div class="popup-content">
+              <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(2)" class="fechar" style="float: right;">
+              <h3 style="margin-top: 50px;">Para verificar o status das maquinas na loja, siga os passos abaixo:</h3>
+
+              <ul>
+                 <li>Acesse a loja e pressione as teclas Windows + r para abrir o prompt de comando.
+                 <li>Escreva cmd e pressione enter.
+                 <li>Digite o <a class="ping" href="#" onclick="openPopup(3)"><b>ping</b></a> seguido do endereço IP da lavadora que você quer testar. Por exemplo, ping 192.168.50.101 para testar a lavadora 432.
+                 <li style="margin-bottom: 50px;">Observe a resposta do comando. Se aparecer uma mensagem como "Resposta de 192.168.50.101: bytes=32 tempo=5ms TTL=255", significa que a lavadora está online e funcionando normalmente. Se aparecer uma mensagem como "Resposta de 192.168.50.46: host de destino inacessível.", significa que a lavadora está offline ou com algum problema de conexão.</li>
+
+                 <li class="solução" style="margin: -10px 0 50px 0">Se alguma maquina estiver offline <a href="#" onclick="openPopup(4)"><b>Clique aqui!</b></a></li>
+              </ul>
+              
+              <a class="fechar-popup" href="#" onclick="closePopup(2)">Fechar</a>
+            </div>
+          </div>
+            
+         </section>
+
+
+         <section class="people-cards">
+          <div class="popup" id="popup3">
+            <div class="popup-content">
+              <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(3)" class="fechar" style="float: right;">
+              <h3 style="margin-top: 50px;">Ping das máquinas e dispositivos em loja</h3>
+
+              <ul>
+
+                <li>GET: <b>ping 192.168.50.100</b></li>
+                <li>Lavadora 432: <b>ping 192.168.50.101</b></li>
+                <li>Lavadora 543: <b>ping 192.168.50.102</b></li>
+                <li>Lavadora 654: <b>ping 192.168.50.103</b></li>
+                <li>Secadora 765: <b>ping 192.168.50.104</b></li>
+                <li>Secadora 876: <b>ping 192.168.50.105</b></li>
+                <li>Secadora 987: <b>ping 192.168.50.106</b></li>
+                <li>RESET: <b>ping 192.168.50.107</b></li>
+                <li>Noteiro NT: <b>ping 192.168.50.108</b></li>
+                <li>Noteiro NTR: <b>ping 192.168.50.109</b></li>
+                <li style="margin-bottom: 50px;">Sensor do Ar-condicionado: <b>ping 192.168.50.110</b></li>
+
+              </ul> 
+
+              
+              <a class="fechar-popup" href="#" onclick="closePopup(3)">Fechar</a>
+            </div>
+          </div>
+        
+          <div class="popup" id="popup4">
+            <div class="popup-content">
+              <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(4)" class="fechar" style="float: right;">
+              <h3 style="margin-top: 50px">Se a maquina estiver fora da rede ou offline, siga os passos abaixo:</h3>
+
+              <ul>
+              
+                  <li class="solução"><b>Acesse o sistema Web e verifique o status da máquina:</b></li>
+                <ul class="testes-ie ts">
+                   <li>Verifique se a máquina está suspensa ou ativa no sistema Web.</li>
+                   <li>Se estiver suspensa, ative-a no sistema.</li>
+                </ul>
+                  </li>
+              
+                  <li class="solução"><b>Verifique a conexão de rede na loja:</b></li>
+                <ul class="testes-ie ts">
+                   <li>Acesse a loja e verifique se o notebook está conectado à rede FN2014.</li>
+                   <li>Se não estiver conectado, faça a conexão à rede.</li>
+                   <li>Verifique se a máquina ficou online após a conexão.</li>
+                </ul>
+                  </li>
+              
+                  <li class="solução"><b>Verifique a hora do notebook:</b></li>
+                <ul class="testes-ie ts">
+                   <li>Verifique se a hora do notebook está correta.</li>
+                   <li>Se não estiver correta, faça a alteração da data e hora do notebook.</li>
+                </ul>
+                  </li>
+              
+                  <li class="solução"><b>Reinicie o Winbox64:</b></li>
+                <ul class="testes-ie ts">
+                   <li>Acesse o Winbox64 e faça login.</li>
+                   <li>Vá para a opção "System".</li>
+                   <li>Selecione "Reboot" e confirme clicando em "Yes".</li>
+                   <li>Assim que o Winbox64 reiniciar, verifique se a máquina ficou online.</li>
+                </ul>
+                  </li>
+              
+                  <li class="solução"><b>Entre em contato com o franqueado:</b></li>
+                <ul class="testes-ie ts">
+                   <li>Se a máquina ainda não estiver online, entre em contato com o franqueado.</li>
+                   <li>Peça ao franqueado para desligar a máquina da tomada ou fonte de energia.</li>
+                   <li>Aguarde aproximadamente 3 minutos.</li>
+                   <li>Peça ao franqueado para ligar a máquina novamente.</li>
+                   <li style="margin-bottom: 50px;">Verifique se a máquina voltou a ficar online.</li>
+                </ul>
+                  </li>
+              
+              </ul>
+              
+              <a class="fechar-popup" href="#" onclick="closePopup(4)">Fechar</a>
+            </div>
+          </div>
+        
+          <div class="popup" id="popup5">
+            <div class="popup-content">
+              <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(5)" class="fechar" style="float: right;">
+              <h3>Exemplo de titulo</h3>
+
+              <ul>
+                <li>Passo 1</li>
+                <li>Passo 2</li>
+                <li>Passo 3</li>
+                <li>Passo 4</li>
+                <li>Passo 5</li>
+                <li>Passo 6</li>
+              </ul> 
+              
+              <a class="fechar-popup" href="#" onclick="closePopup(5)">Fechar</a>
+            </div>
+          </div>
+   
+          <div class="popup" id="popup6">
+            <div class="popup-content">
+              <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(6)" class="fechar" style="float: right;">
+              <h3>Exemplo de titulo</h3>
+
+              <ul>
+                <li>Passo 1</li>
+                <li>Passo 2</li>
+                <li>Passo 3</li>
+                <li>Passo 4</li>
+                <li>Passo 5</li>
+                <li>Passo 6</li>
+              </ul> 
+              
+              <a class="fechar-popup" href="#" onclick="closePopup(6)">Fechar</a>
+            </div>
+          </div>
+         </section>
+
+        </div>
+
+        <img src="../../../img/Icons/Outros icons/up-arrow.png" id="scroll-to-top-btn" class="hidden">
+
+            <!-- Tela de carregamento -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+      <footer class="footer">
+
+          <div class="container">
+              <h2 class="footer__logo">Lavanderia60minutos</h2>
+      
+              <p>
+                &copy; Lavanderia 60 Minutos 2023. Todos os direitos Reservados. Este site é de propriedade da HI GROUP LTDA, única responsável por seu conteúdo.
+              </p>
+
+              <p>
+                LAVANDERIA 60 MINUTOS   |   CNPJ: 28.842.017/0001-05<br>
+                Av. Mar Vermelho, 290 - Intermares, Cabedelo - PB, 58102-120
+              </p>
+
+
+          </div>
+
+          <div>
+            <a class="redes-sociais" href="https://www.facebook.com/lavanderia60minutos" target="_blank"><img src="../../../img/Icons/Redes-Sociais icons/facebook.png"></a>
+            <a class="redes-sociais" href="https://www.instagram.com/lavanderia60minutos/" target="_blank"><img src="../../../img/Icons/Redes-Sociais icons/instagram.png"></a>
+            <a class="redes-sociais" href="http://api.whatsapp.com/send?1=pt_BR&phone=5583998161173" target="_blank"><img src="../../../img/Icons/Redes-Sociais icons/whatsapp.png"></a>
+            <a class="redes-sociais" href="https://www.youtube.com/channel/UCIMPtxzLzZFVDlz2XucOrrw/videos" target="_blank"><img src="../../../img/Icons/Redes-Sociais icons/youtube.png"></a>
+          </div>
+
+      </footer>
+
+      <div class="popup" id="popup100">
+        <div class="popup-content">
+          <img src="../../../img/Icons/Outros icons/Fechar.png" onclick="closePopup(100)" class="fechar" style="float: right;">
+          <h3>Escolha a região da loja</h3>
+    
+          <ul class="map-list">
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1KcHeomKUQQEh1ko6dfvulEoFftHlGag&ll=-2.966649593971806%2C-55.92101905&z=5" target="_blank">Lojas do Norte</a><p class="maps-estados">AC - AM - AP - PA - RO - RR - TO</p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1Ck7cvd-ImTteu1AXS2ADxafN5a0y670&ll=-10.102174947744818%2C-41.16191960000002&z=4" target="_blank">Lojas do Nordeste</a><p class="maps-estados">AL - BA - CE - MA - PB - PE - PI - RN</p></li></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1d5w022Bhhn86R0i0R12u2LSSjplVi38&ll=-19.083855829448787%2C-53.076589718106675&z=5" target="_blank">Lojas do Centro-Oeste</a><p class="maps-estados">DF - GO - MS - MT
+            </p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1ThoXAEYEPMHE6jw_Jt8HepiOS-5pNdo&ll=-21.64142220737699%2C-44.64952074999999&z=5" target="_blank">Lojas do Sudeste</a><p class="maps-estados">ES - MG - RJ</p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1MsYjt01G5HzwyBKyliFsku2yIRP2eH4&ll=-28.413931404858133%2C-50.94374495000001&z=6" target="_blank">Lojas do Sul</a><p class="maps-estados">PR - RS - SC</p></li>
+            <li class="map-li"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1Bh0nDa_0aGGQUt8hYZKcqC0LFrhEI7A&ll=-23.324915578939212%2C-47.300741949999995&z=8" target="_blank">Lojas de São Paulo</a><p class="maps-estados">SP</p></li>
+          </ul>  
+
+         <a class="fechar-popup" href="#" onclick="closePopup(100)">Fechar</a> 
+    
+        </div>        
+
+        <script src="../../../js/menu.js"></script>        
+        <script src="../../../js/main.js"></script>
+        <script src="../../../js/cards-maquineta.js"></script>
+
+        <script>
+          // Código para esconder a tela de carregamento quando a página estiver carregada
+          window.addEventListener('load', function () {
+        var loader = document.querySelector('.loader-wrapper');
+        loader.style.display = 'none';
+      });
+    </script>
+
+    </body>
+</html>
